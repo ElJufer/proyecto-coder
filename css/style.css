@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
+
 a{
     text-decoration:none;
 }
@@ -300,6 +305,45 @@ section div img{
     align-items: center
 }
 
+/*!---------MEDIA QUERIES---------*/
+
+@media (max-width: 768px){
+
+.titulo1{
+    font-size: 80px;
+}
+
+.titulo2{
+    font-size: 20px;
+}
+
+.ferrari1 img{
+    width: 90%;
+}
+
+.ferrari2 img, .ferrari3 img, .ferrari4 img{
+    width: 100%;
+    height: auto;
+}
+
+.vehiculos .vehiculos-contenedor div{
+    width: 90%;
+    height: auto;
+}
+
+.grid-general{
+    grid-template-columns: 1fr;
+}
+
+.ferrari5{
+    flex-direction: column;
+    padding: 50px;
+}
+
+footer a img{
+    width: 50px; 
+}
+}
 
 /*!---------ABOUT US---------*/
 
