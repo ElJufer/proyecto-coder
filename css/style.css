@@ -307,10 +307,9 @@ section div img{
 
 /*!---------MEDIA QUERIES---------*/
 
-@media (max-width: 768px){
-
+@media (max-width: 800px){
 .titulo1{
-    font-size: 80px;
+    font-size: 80px !important;
 }
 
 .titulo2{
@@ -318,7 +317,7 @@ section div img{
 }
 
 .ferrari1 img{
-    width: 90%;
+    width: 100%;
 }
 
 .ferrari2 img, .ferrari3 img, .ferrari4 img{
@@ -341,7 +340,11 @@ section div img{
 }
 
 footer a img{
-    width: 50px; 
+    width: 50px;
+}
+
+@media (min-width: 1000px) {
+
 }
 }
 
