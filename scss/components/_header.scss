@@ -1,0 +1,47 @@
+header {
+    position: sticky;
+    top: 0;
+
+    nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+    }
+}
+
+.container-fluid {
+    height: 80px;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+.bg-menu {
+    background-color: black;
+}
+
+.navbar-nav {
+    .nav-link {
+        color: white;
+
+        &:hover {
+            color: red;
+        }
+
+        &.active {
+            color: white;
+        }
+    }
+}
+
+button {
+    &.btn-outline-success {
+        color: white;
+        background-color: #880a0a !important;
+        border: #880a0a;
+    }
+}

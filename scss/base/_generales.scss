@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+main {
+    .vehiculos {
+        background-color: rgba(31, 0, 0, 0.862);
+
+        h2 {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-family: "Body-Font";
+            padding: 25px;
+        }
+
+        .vehiculos-contenedor {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            color: white;
+
+            .vehiculos {
+                background-color: black;
+                width: 700px;
+                height: auto;
+                text-align: center;
+                font-size: 25px;
+                font-family: "Body-Font";
+                margin: 60px;
+                padding: 10px;
+
+                img {
+                    width: 100%;
+                    max-height: 400px;
+                    object-fit: cover;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    margin: 5px 0;
+                    color: white;
+                }
+
+                .price {
+                    font-size: 18px;
+                    margin: 10px 0;
+                    color: white;
+                }
+
+                button {
+                    padding: 7px 10px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.servicio1 {
+    h1 {
+        background-image: url("../img/Ferrari\ fabrica\ exterior.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: local;
+        height: 500px;
+        font-size: 55px;
+        color: #000000;
+        font-family: "Body-Font";
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.grid-general {
+    background-color: #d6b484;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+    .grid-item1,
+    .grid-item2,
+    .grid-item3,
+    .grid-item4,
+    .grid-item5 {
+        display: grid;
+        grid-row-gap: 15px;
+        background-color: #fff7e7;
+        padding: 100px;
+
+        h2 {
+            font-size: 30px;
+            color: black;
+            font-family: "Body-Font";
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+            font-family: "Body-Font";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            margin: 10px;
+        }
+    }
+
+    .grid-item5 {
+        justify-items: center;
+        font-size: 20px;
+        color: black;
+        font-family: "Body-Font";
+        display: grid;
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+
+        img {
+            width: 700px; 
+            display: block; 
+            margin: 0 auto; 
+        }
+    }
+}
+
+.ferrari-section {
+    width: 100%;
+    background-color: #d6bc81;
+    padding: 20px;
+    font-family: "Body-Font";
+    color: black;
+
+    h2 {
+        font: bold 2rem black;
+        margin: 20px 0;
+        border-bottom: 2px solid #d6b484;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+
+    img {
+        width: 40%;
+        margin: 60px auto;
+        display: block;
+        border: 3px solid #d6b484;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff7e7;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+main {
+    form {
+        padding: 3%;
+    }
+}

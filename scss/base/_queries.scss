@@ -1,0 +1,49 @@
+
+@media (max-width: 400px) {
+    .titulo1 {
+        font-size: 80px !important;
+    }
+
+    .titulo2 {
+        font-size: 20px;
+    }
+
+    .ferrari1 {
+        img {
+            width: 100%;
+        }
+    }
+
+    .ferrari2, .ferrari3, .ferrari4 {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .vehiculos {
+        .vehiculos-contenedor {
+            div {
+                width: 90%;
+                height: auto;
+            }
+        }
+    }
+
+    .grid-general {
+        grid-template-columns: 1fr;
+    }
+
+    .ferrari5 {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    footer {
+        a {
+            img {
+                width: 50px;
+            }
+        }
+    }
+}

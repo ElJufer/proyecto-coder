@@ -15,6 +15,18 @@ a{
 
 /*!---------HEADER---------*/
 
+header{
+    position: sticky;
+    top: 0;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
 .container-fluid{
     height: 80px;
 }
@@ -39,22 +51,10 @@ a{
     color: white;
 }
 
-button.btn-outline-success {
+button.btn-outline-success{
     color: white;
     background-color: #880a0a !important;
     border: #880a0a;
-}
-
-header{
-    position: sticky;
-    top: 0;
-}
-
-header nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
 }
 
 /*!---------MAIN---------*/
@@ -132,7 +132,7 @@ section div h3{
 }
 
 .ferrari2 p, .ferrari3 p, .ferrari4 p{
-    font-size: 18px;
+    font-size: 19px;
     font-family: "Body-Font";color: black;
     margin: 50px;
 }
@@ -244,7 +244,7 @@ section div img{
 /*!---------SERVICIOS---------*/
 
 .servicio1 h1{
-    background-image: url(../img/Ferrari\ fabrica\ exterior.jpg);
+    background-image:url("../img/Ferrari\ fabrica\ exterior.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -260,7 +260,7 @@ section div img{
 }
 
 .grid-general{
-    background-color: gray;
+    background-color:#d6b484;
 }
 
 .grid-general{
@@ -287,7 +287,7 @@ section div img{
 .grid-item1, .grid-item2, .grid-item3, .grid-item4, .grid-item5{
     display: grid;
     grid-row-gap:15px;
-    background-color: #c64d11b9;
+    background-color: #fff7e7;
     padding: 100px;
 }
 
@@ -313,17 +313,58 @@ section div img{
 
 /*!---------ABOUT US---------*/
 
+.ferrari-section{
+    width: 100%;
+    background-color: #d6bc81;
+    padding: 20px;
+    font-family: "Body-Font";
+    color: black;
+}
+
+.ferrari-section h2{
+    font-size: 2rem;
+    color: black;
+    margin: 20px 0;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #d6b484;
+}
+
+.ferrari-section p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.ferrari-section img{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 60px auto;
+    border: 3px solid #d6b484;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ferrari-section nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff7e7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /*!---------CONTACTO---------*/
 
 form{
-    max-width: 1000px; 
-    margin: 20px; 
+    padding: 3%;
 }
 
 /*!---------MEDIA QUERIES---------*/
 
-@media (max-width: 800px){
+@media (max-width: 400px){
     .titulo1{
         font-size: 80px !important;
     }
@@ -336,12 +377,14 @@ form{
         width: 100%;
     }
     
-    .ferrari2 img, .ferrari3 img, .ferrari4 img{
+    .ferrari2 img,
+    .ferrari3 img,
+    .ferrari4 img {
         width: 100%;
         height: auto;
     }
     
-    .vehiculos .vehiculos-contenedor div{
+    .vehiculos .vehiculos-contenedor div {
         width: 90%;
         height: auto;
     }
@@ -358,8 +401,5 @@ form{
     footer a img{
         width: 50px;
     }
-    
-    @media (min-width: 1000px){
-    
-    }
-    }
+}
+
